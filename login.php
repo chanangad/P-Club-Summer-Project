@@ -129,7 +129,7 @@ while($row=mysql_fetch_array($results))
   $user=1;
   if(strcmp($row["password"],$password)==0){
 $_SESSION['loggedin']="Yes";
- header('Location: welcome1.php');
+ header('Location: welcome.php');
 exit;
 }
   else{
